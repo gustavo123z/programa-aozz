@@ -16,9 +16,14 @@ cartao.innerHTML =
             </div>
 
 
-
+let respostaestavisivel = false
 container.appendChild(cartao)
 
+}
+function viracartao () {
+respostaestavisivel = !respostaestavisivel
+cartao.classlist.toogle('active',respostaestavisivel)
 
 }
 
+cartao.addeventlistener('click', viracartao)
